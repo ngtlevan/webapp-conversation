@@ -95,7 +95,7 @@ const Answer: FC<IAnswerProps> = ({
         content={isLike ? '取消赞同' : '取消反对'}
       >
         <div
-          className={'relative box-border flex items-center justify-center h-7 w-7 p-0.5 rounded-lg bg-white cursor-pointer text-gray-500 hover:text-gray-800'}
+          className={'relative box-border flex items-center justify-center h-7 w-7 p-0.5 rounded-lg bg-transparent cursor-pointer text-gray-500 hover:text-gray-800'}
           style={{ boxShadow: '0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -2px rgba(0, 0, 0, 0.05)' }}
           onClick={async () => {
             await onFeedback?.(id, { rating: null })
