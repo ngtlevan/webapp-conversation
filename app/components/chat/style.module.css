@@ -57,11 +57,11 @@
   padding-right: 90px;
   border-radius: 12px;
   line-height: 20px;
-  background-color: #fff;
+  background-color: transparent;
 }
 
 .textArea:hover {
-  background-color: #fff;
+  background-color: transparent;
 }
 
 /* .textArea:focus {
