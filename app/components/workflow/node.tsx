@@ -40,7 +40,7 @@ const NodePanel: FC<Props> = ({ nodeInfo, hideInfo = false }) => {
 
   return (
     <div className={cn('px-4 py-1', hideInfo && '!p-0')}>
-      <div className={cn('group transition-all bg-white border border-gray-100 rounded-2xl shadow-xs hover:shadow-md', hideInfo && '!rounded-lg')}>
+      <div className={cn('group transition-all bg-transparent border border-gray-100 rounded-2xl shadow-xs hover:shadow-md', hideInfo && '!rounded-lg')}>
         <div
           className={cn(
             'flex items-center pl-[6px] pr-3 cursor-pointer',
