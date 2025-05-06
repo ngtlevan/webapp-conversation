@@ -49,7 +49,7 @@ export const EditIconSolid: FC<{ className?: string }> = ({ className }) => {
 }
 
 const IconWrapper: FC<{ children: React.ReactNode | string }> = ({ children }) => {
-  return <div className={'rounded-lg h-6 w-6 flex items-center justify-center hover:bg-gray-100'}>
+  return <div className={'rounded-lg h-6 w-6 flex items-center justify-center hover:bg-transparent'}>
     {children}
   </div>
 }
@@ -177,7 +177,7 @@ const Answer: FC<IAnswerProps> = ({
         </div>
         <div className={`${s.answerWrap}`}>
           <div className={`${s.answer} relative text-sm text-gray-900`}>
-            <div className={`ml-2 py-3 px-4 bg-gray-100 rounded-tr-2xl rounded-b-2xl ${workflowProcess && 'min-w-[480px]'}`}>
+            <div className={`ml-2 py-3 px-4 bg-transparent rounded-tr-2xl rounded-b-2xl ${workflowProcess && 'min-w-[480px]'}`}>
               {workflowProcess && (
                 <WorkflowProcess data={workflowProcess} hideInfo />
               )}
