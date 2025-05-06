@@ -46,7 +46,7 @@ const Base: FC<Props> = ({
 
   return (
     <div className={cn(wrapClassName)}>
-      <div ref={ref} className={cn(className, isExpand && 'h-full', 'rounded-lg border', isFocus ? 'bg-white border-gray-200' : 'bg-gray-100 border-gray-100 overflow-hidden')}>
+      <div ref={ref} className={cn(className, isExpand && 'h-full', 'rounded-lg border', isFocus ? 'bg-transparent border-gray-200' : 'bg-transparent-100 border-gray-100 overflow-hidden')}>
         <div className='flex justify-between items-center h-7 pt-1 pl-3 pr-2'>
           <div className='text-xs font-semibold text-gray-700'>{title}</div>
           <div className='flex items-center'>
